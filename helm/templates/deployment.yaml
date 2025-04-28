@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-modulith-test
+  namespace: modulith
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-modulith-test
+  template:
+    metadata:
+      labels:
+        app: spring-modulith-test
+    spec:
+      containers:
+        - name: spring-modulith-test
+          image: tkragsberger/spring-modulith-test:latest
+          ports:
+            - containerPort: 8080
