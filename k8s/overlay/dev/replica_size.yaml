@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-modulith-test
+  namespace: modulith
+spec:
+  replicas: 3
