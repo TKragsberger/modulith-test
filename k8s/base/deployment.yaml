@@ -4,7 +4,6 @@ metadata:
   name: spring-modulith-test
   namespace: modulith
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: spring-modulith-test
