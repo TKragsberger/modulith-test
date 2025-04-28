@@ -3,5 +3,6 @@ kind: Kustomization
 namespace: modulith
 resources:
   - ../../base
-patches:
-  - path: replica_size.yaml
+replicas:
+  - count: 3
+    name: spring-modulith-test
