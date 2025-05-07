@@ -4,6 +4,8 @@ metadata:
   name: postgres-external
   namespace: modulith
 spec:
+  selector:
+    app: spring-modulith-test
   ports:
     - port: 5432
   type: ExternalName
